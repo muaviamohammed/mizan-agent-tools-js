@@ -1,0 +1,61 @@
+{
+  "name": "mizan-agent-tools",
+  "version": "0.1.0",
+  "description": "Verify MIZAN zero-knowledge track-record credentials (VTR-1) before an agent trusts, pays, copies or allocates. Typed, dependency-free client for the public MIZAN registry.",
+  "license": "MIT",
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.js"
+      },
+      "require": {
+        "types": "./dist/index.d.cts",
+        "default": "./dist/index.cjs"
+      }
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "sideEffects": false,
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build": "tsup",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run test/client.test.ts",
+    "test:live": "MIZAN_LIVE=1 vitest run test/live.test.ts"
+  },
+  "keywords": [
+    "mizan",
+    "vtr-1",
+    "zero-knowledge",
+    "stark",
+    "track-record",
+    "trading",
+    "ai-agents",
+    "verification"
+  ],
+  "homepage": "https://mizan.market/skill/",
+  "devDependencies": {
+    "@types/node": "^22.7.4",
+    "tsup": "^8.3.5",
+    "typescript": "^5.6.3",
+    "vitest": "^2.1.9"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/muaviamohammed/mizan-agent-tools-js.git"
+  },
+  "bugs": {
+    "url": "https://github.com/muaviamohammed/mizan-agent-tools-js/issues"
+  }
+}
