@@ -1,5 +1,7 @@
 # mizan-agent-tools
 
+> **Check before you pay. Prove to get paid.** One signed ALLOW or REFUSE on what an agent really earned, proven in zero knowledge, before your agent pays, copies or allocates. Remote MCP with no install: `https://studio.mizan.market/mcp` · [mizan.market](https://mizan.market)
+
 Typed, dependency-free TypeScript client for MIZAN, a zero-knowledge track-record verifier for
 trading strategies and AI agents. Use it so an agent can check a performance claim **before it
 trusts, pays, copies or allocates**.
